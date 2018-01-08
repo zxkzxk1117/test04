@@ -34,7 +34,7 @@ sap.ui.define([
 				"targets": {
 					"First": {
 						"viewName": "First",
-						"viewLevel":1
+						"viewLevel":1 
 					},
 					"Second": {
 						"viewName": "Second",
