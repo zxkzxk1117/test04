@@ -1,0 +1,8 @@
+<mvc:View controllerName="test04.controller.Second" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page showNavButton="true" navButtonPress="onNavBack" title="this is my second controller and view">
+		<content>
+			<Button text="To Display New Page by DisplayTarget" press="navByDisplayTarget"></Button>
+		</content>
+	</Page>
+</mvc:View>

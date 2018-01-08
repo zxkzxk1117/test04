@@ -1,0 +1,7 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page title="this is my first controller and view">
+		<content>
+			<Label text="This is invalid page"></Label>
+		</content>
+	</Page>
+</mvc:View>
