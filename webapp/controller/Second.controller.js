@@ -2,7 +2,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/core/routing/History", "sap/
 	return Controller.extend("test04.controller.Second", {
 		onInit:function(){
 			this.router = sap.ui.core.UIComponent.getRouterFor(this);
-			this.router.getRoute("SecondView").attachMatched(this._onRouteMatched, this);
+			this.router.getRoute("SecondView").attachMatched(this._onRouteMatched, this); //监听路由跳转
 			
 			// this.router.attachRouteMatched(function (oEvent){
 			// 	var sRouteName = oEvent.getParameter("name");
@@ -14,9 +14,9 @@ sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/core/routing/History", "sap/
 		_onRouteMatched: function(oEvent){
 			var para = oEvent.getParameter("arguments");
 			var bookMarkPara = para["?query"];
-			// alert('receive Para Name:'+para.name);
-			// alert('receive Para sex:'+para.sex);
-			// alert(bookMarkPara.pageName);
+			alert('receive Para Name:'+para.name);
+			alert('receive Para sex:'+para.sex);
+			alert(bookMarkPara.pageName);
 		},
 		onNavBack: function(oEvent){
 			var oHistory, sPreviousHash;

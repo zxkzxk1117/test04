@@ -2,6 +2,6 @@
 	<Page title="this is my first controller and view">
 		<content>
 			<Label text="This is invalid page"></Label>
-		</content>
+		</content> 
 	</Page>
 </mvc:View>

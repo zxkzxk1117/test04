@@ -6,7 +6,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller"],function(Controller){
 		goToNextPage: function(oEvent){
 			this.router.navTo("SecondView", {name: 'richard', sex:'male', query: {
 					pageName : "second page"
-				}}); 
+				}}); //},"ture"}); 设置为ture清楚清除缓存
 				
 				// navTo set true, can remove history
 		}
